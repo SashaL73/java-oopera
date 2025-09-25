@@ -7,10 +7,12 @@ public class Theatre {
 
         Director director1 = new Director("Aleksej","Balabanov",Gender.MALE, 5874);
         Director director2 = new Director("Steven","Spilberg",Gender.MALE, 60);
+        Choreographer choreographer = new Choreographer("Bob","Surnamov",Gender.MALE);
+        MusicAuthor musicAuthor = new MusicAuthor("Peter","Tchaikovsky",Gender.MALE);
 
         Show show = new Show("TheGrateShow",60, director1);
-        Opera opera = new Opera("MagnificentOpera",120,director1,"Rahmaninov","text",30);
-        Ballet balet = new Ballet("ExcellentBallet",120,director2,"Tchaikovsky","text","choreography");
+        Opera opera = new Opera("MagnificentOpera",120,director1,musicAuthor,"text",30);
+        Ballet balet = new Ballet("ExcellentBallet",120,director2,musicAuthor,"text",choreographer);
 
         show.addActor(actor1);
         show.addActor(actor3);
@@ -25,10 +27,10 @@ public class Theatre {
         System.out.println("Актеры шоу - " + show.getTitle());
         show.printActors();
         System.out.println();
-        System.out.println("Актеры шоу - " + opera.getTitle());
+        System.out.println("Актеры оперы - " + opera.getTitle());
         opera.printActors();
         System.out.println();
-        System.out.println("Актеры шоу - " + balet.getTitle());
+        System.out.println("Актеры балета - " + balet.getTitle());
         balet.printActors();
 
         show.replaceActor(actor4,"Conor");

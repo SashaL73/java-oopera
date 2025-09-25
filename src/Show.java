@@ -1,8 +1,7 @@
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Show {
-    String title;
+    private final String title;
     int duration;
     Director director;
     ArrayList<Actor> listOfActors;
