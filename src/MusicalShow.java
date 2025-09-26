@@ -1,6 +1,6 @@
 public class MusicalShow extends Show {
-    MusicAuthor musicAuthor;
-    private final String librettoText;
+    protected MusicAuthor musicAuthor;
+    protected String librettoText;
 
     public MusicalShow(String title, int duration, Director director, MusicAuthor musicAuthor, String librettoText) {
         super(title, duration, director);
