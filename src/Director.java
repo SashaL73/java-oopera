@@ -7,8 +7,8 @@ public class Director extends Person {
     }
 
 
-    @Override
-        public String toString(){
-            return name + " " + surname;
-    }
+//    @Override
+//        public String toString(){
+//            return name + " " + surname;
+//    }
 }
