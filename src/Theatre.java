@@ -24,12 +24,15 @@ public class Theatre {
         balet.addActor(actor2);
         balet.addActor(actor4);
 
+        show.printDirector();
         System.out.println("Актеры шоу - " + show.getTitle());
         show.printActors();
         System.out.println();
+        opera.printDirector();
         System.out.println("Актеры оперы - " + opera.getTitle());
         opera.printActors();
         System.out.println();
+        balet.printDirector();
         System.out.println("Актеры балета - " + balet.getTitle());
         balet.printActors();
 
