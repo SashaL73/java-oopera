@@ -20,6 +20,7 @@ public class Show {
         }
     }
 
+
     public void addActor(Actor newActor) {
         boolean isPresent = false;
         for (Actor actor : listOfActors) {
@@ -58,6 +59,10 @@ public class Show {
 
     public String getTitle(){
         return title;
+    }
+
+    public void printDirector(){
+        System.out.println(director.toString());
     }
 
 
