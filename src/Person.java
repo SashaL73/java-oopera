@@ -1,7 +1,7 @@
 public class Person {
-    final String name;
-    String surname;
-    Gender gender;
+    protected final String name;
+    protected final String surname;
+    protected final Gender gender;
 
 
     public Person(String name, String surname, Gender gender) {
@@ -20,5 +20,10 @@ public class Person {
 
     public Gender getGender() {
         return gender;
+    }
+
+    @Override
+    public String toString(){
+        return name + " " + surname;
     }
 }
